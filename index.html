@@ -30,7 +30,7 @@
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid" id="nav">
         <a class="navbar-brand ms-3" href="#">
-            <img src="../images1/images/v192_29.png" >
+            <img src="./images/v192_29.png" >
         </a>
          <button
           class="navbar-toggler"
@@ -79,23 +79,23 @@
           <div
             class="swiper-slide"
             id="firstSlide"
-            style="background-image: url('../images1/images/v192_35.png')"
+            style="background-image: url('./images/v192_35.png')"
           ></div>
           <div
             class="swiper-slide"id="firstSlide"
-            style="background-image: url('../images1/images/v192_36.png')"
+            style="background-image: url('./images/v192_36.png')"
           ></div>
           <div
             class="swiper-slide"id="firstSlide"
-            style="background-image: url('../images1/images/v192_39.png')"
+            style="background-image: url('./images/v192_39.png')"
           ></div>
           <div
             class="swiper-slide"id="firstSlide"
-            style="background-image: url('../images1/images/v192_38.png')"
+            style="background-image: url('./images/v192_38.png')"
           ></div>
           <div
             class="swiper-slide"id="firstSlide"
-            style="background-image: url('../images1/images/v192_37.png')"
+            style="background-image: url('./images/v192_37.png')"
           ></div>
         </div>
          <div class="swiper-pagination"></div>
@@ -117,23 +117,23 @@
         </div>
         <div class="row" id="row1">
           <div class="col-md-3">
-            <div class ="img1"  style="background: url('../images1/images/v192_116.png')"></div>
+            <div class ="img1"  style="background: url('./images/v192_116.png')"></div>
             <div class="text2">SAP HYBRIS COMMERCE</div>   
           </div>
         <div class="col-md-2 ">
-          <div class="img2"style="background: url('../images1/images/v192_118.png')"></div>
+          <div class="img2"style="background: url('./images/v192_118.png')"></div>
           <div class="text3">DATA HUB</div> 
         </div>
         <div class="col-md-2">
-          <div class="img3"style="background: url('../images1/images/v192_119.png')"></div>
+          <div class="img3"style="background: url('./images/v192_119.png')"></div>
           <div class="text4">MACHINE LEARNING</div>     
         </div>
         <div class="col-md-2">
-          <div class="img4"style="background: url('../images1/images/v192_120.png')"></div>
+          <div class="img4"style="background: url('./images/v192_120.png')"></div>
           <div class="text5">ARTIFICIAL INTELLIGENCE</div>  
         </div>
         <div class="col-md-3">
-          <div class="img5"style="background: url('../images1/images/v192_121.png')"></div>       
+          <div class="img5"style="background: url('./images/v192_121.png')"></div>       
           <div class="text6">IDENTITY AND ACCESS MANAGEMENT</div>
         </div>
         </div>
@@ -150,27 +150,27 @@
         <div class="swiper-wrapper">
           <div
             class="swiper-slide" id="secondSlide" 
-            style="background-image: url('../images1/images/v192_82.png')";
+            style="background-image: url('./images/v192_82.png')";
               ></div>
           <div
             class="swiper-slide" id="secondSlide"
-            style="background-image: url('../images1/images/v192_84.png')"
+            style="background-image: url('./images/v192_84.png')"
           ></div>
           <div
             class="swiper-slide" id="secondSlide"
-            style="background-image: url('../images1/images/v192_85.png')"
+            style="background-image: url('./images/v192_85.png')"
           ></div>
           <div
             class="swiper-slide" id="secondSlide"
-            style="background-image: url('../images1/images/v192_87.png')"
+            style="background-image: url('./images/insight1.jpg')"
           ></div>
           <div
             class="swiper-slide" id="secondSlide"
-            style="background-image: url('../images1/images/v192_83.png')"
+            style="background-image: url('./images/enterprise1.jpg')"
           ></div>
           <div
           class="swiper-slide" id="secondSlide"
-          style="background-image: url('../images1/images/v192_86.png')"
+          style="background-image: url('./images/sap.jpg')"
         ></div>
         </div>
          <div class="swiper-pagination"></div>
@@ -185,10 +185,41 @@
           </div>
          
           <div class="col-md-12">
-            <input type="button" id="button1" value="Register Now"></input>
+            <button class="btnOpen" id="button1">Register Now</button>
+            <section>
+              <div class="popup" id="popup">
+                <div class="close">&times;</div>
+                <div style="position: relative; top: 40px">
+                  <input type="email" class="email" required="true" />
+                  <label for="email">Email</label>
+                </div>
+      
+                <div style="position: relative; top: 40px">
+                  <form>
+                    <input type="text" class="first_name" required="true" />
+                    <label for="first_name">First Name</label>
+                  </form>
+                </div>
+                <div style="position: relative; top: 40px">
+                  <input type="text" class="last_name" required />
+                  <label for="last_name">Last Name</label>
+                </div>
+                <!-- <a href="#" onclick="hide('popup')">Close</a> -->
+      
+                <button class="btnSubmit" style="position: relative; top: 40px">
+                  Submit
+                </button>
+              </div>
+              <div class="popup1" id="popup1" style="display: none">
+                <h1>Registration Confirmed</h1>
+                <p>Thank You.</p>
+      
+                <button class="btnClose">Close</button>
+              </div>
+            </section>
           </div>
-          </div>
-
+        </div>
+        
           <div class="swiper-container swiper3" >
             <div class="col-md-12">
               <span class="textHeading5">Life at Clavrit</span><br>
@@ -199,15 +230,15 @@
               <div
                 class="swiper-slide"
                 id="thirdSlide"
-                style="background-image: url('../images1/images/v192_96.png')"
+                style="background-image: url('./images/v192_96.png')"
               ></div>
               <div
                 class="swiper-slide"id="thirdSlide"
-                style="background-image: url('../images1/images/v192_100.png')"
+                style="background-image: url('./images/v192_100.png')"
               ></div>
               <div
                 class="swiper-slide"id="thirdSlide"
-                style="background-image: url('../images1/images/v192_97.png')"
+                style="background-image: url('./images/v192_97.png')"
               ></div> 
             </div>
             </div>
@@ -223,7 +254,7 @@
                 </span> 
                 </div>
                 <div class="col-md-2">
-                  <img src="../images1/images/v192_102.png" id="imgCEO">
+                  <img src="./images/v192_102.png" id="imgCEO">
                 </div>
               </div>
               </div>
@@ -236,7 +267,39 @@
                   Join and grow with us! Send us your resume today. Our opportunities range from paid internships to client site placements. </span> 
                </div>
                <div class="col-md-12">
-                <input type="button" id="button2" value="Apply Today"></input>
+                <button class="btnOpen1" id="button2">Apply Today</button>
+                <<section>
+                  <div class="popup2" id="popup2">
+                    <div class="close1">&times;</div>
+                    <div style="position: relative; top: 40px">
+                      <input type="email" class="email" required="required" />
+                      <label for="email">Email</label>
+                    </div>
+          
+                    <div style="position: relative; top: 40px">
+                      <form>
+                        <input type="text" class="first_name" required="required" />
+                        <label for="first_name">First Name</label>
+                      </form>
+
+                    </div>
+                    <div style="position: relative; top: 40px">
+                      <input type="text" class="last_name" required />
+                      <label for="last_name">Last Name</label>
+                    </div>
+                    <!-- <a href="#" onclick="hide('popup')">Close</a> -->
+          
+                    <button class="btnSubmit1" style="position: relative; top: 40px">
+                      Submit
+                    </button>
+                  </div>
+                  <div class="popup3" id="popup3" style="display: none">
+                    <h1>Registration Confirmed</h1>
+                    <p>Thank You.</p>
+          
+                    <button class="btnClose1">Close</button>
+                  </div>
+                </section> 
               </div>
                </div>
                
@@ -291,13 +354,13 @@
                       <a class="whatsapp" href="#">
                           <i class="fab fa-whatsapp"></i>
                       </a>
-                      <a class="linkedin" href="#">
+                      <a href="https://in.linkedin.com/company/clavrit"  class="linkedin">
                           <i class="fab fa-linkedin-in"></i>
                       </a>
-                      <a class="linkedin" href="#">
+                      <a class="linkedin" href="">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a class="linkedin" href="#">
+                    <a  href="https://instagram.com/clav.ritdigitalsolutions?igshid=MzRlODBiNWFlZA==" class="linkedin">
                       <i class="fa-brands fa-instagram"></i>
                     </a>
                   </a>
@@ -312,20 +375,12 @@
                 <div class="row">
                   <div class="col-md-12">
                     <span class="text25">© 2019. Clavrit Digital Solutions. All Rights Reserved.</span>
-                    <!-- <span class="endImages"  style="position: relative;left: 370px;">
-                      <a href=""><img src="../images1/images/v192_126.png"  id="imgEnd1"></a> 
-                      <a href=""><img src="../images1/images/v192_127.png" id="imgEnd2"></a>
-                      <a href=""><img src="../images1/images/v192_128.png" id="imgEnd3"></a>
-                      <a href=""><img src="../images1/images/v192_129.png" id="imgEnd4"></a>
-                      <a href=""><img src="../images1/images/v192_130.png" id="imgEnd5"></a>
-                      <a href=""><img src="../images1/images/v192_132.png" id="imgEnd6"></a>
-                    </span> -->
                       </div>
                    </div>
                </div>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-     <script src="script.js"></script>
+     <script defer src="script.js"></script>
     </body>
 </html>
