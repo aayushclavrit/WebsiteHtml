@@ -764,73 +764,6 @@ img {
   text-align: left;
 }
 
-/* #imgEnd1 {
-  width: 30px;
-  height: 30px;
-  position: relative;
-  top: 10px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  overflow: hidden;
-}
-#imgEnd2 {
-  width: 30px;
-  height: 30px;
-  position: relative;
-  top: 10px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  overflow: hidden;
-}
-#imgEnd3 {
-  width: 30px;
-  height: 30px;
-  position: relative;
-  top: 10px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  overflow: hidden;
-}
-#imgEnd4 {
-  width: 30px;
-  height: 30px;
-  position: relative;
-  top: 10px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  overflow: hidden;
-}
-#imgEnd5 {
-  width: 30px;
-  height: 30px;
-  position: relative;
-  top: 10px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  overflow: hidden;
-}
-#imgEnd6 {
-  width: 159px;
-  height: 54px;
-  position: relative;
-  top: 10px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  overflow: hidden;
-} */
-
 @media only screen and (max-width: 300px) and (min-width: 250px) {
   #boxImage {
     margin-top: 423px;
@@ -901,6 +834,19 @@ img {
     position: relative;
     left: 0px;
   }
+  .popup {
+    left: 52% !important;
+    width: 285px !important;
+  }
+  .popup2 {
+    left: 52% !important;
+    width: 285px !important;
+  }
+  .navbar-toggler {
+    position: relative;
+    left: 200px;
+    top: -66px;
+  }
 }
 @media only screen and (max-width: 333px) and (min-width: 300px) {
   #boxImage {
@@ -962,6 +908,12 @@ img {
   .text25 {
     position: relative;
     left: 0px;
+  }
+  .popup {
+    left: 39% !important;
+  }
+  .popup2 {
+    left: 39% !important;
   }
 }
 @media only screen and (max-width: 360px) and (min-width: 333px) {
@@ -1025,6 +977,12 @@ img {
   .text25 {
     position: relative;
     left: 0px;
+  }
+  .popup {
+    left: 39% !important;
+  }
+  .popup2 {
+    left: 39% !important;
   }
 }
 @media only screen and (max-width: 390px) and (min-width: 360px) {
@@ -1091,6 +1049,12 @@ img {
     position: relative;
     left: 0px;
   }
+  .popup {
+    left: 39% !important;
+  }
+  .popup2 {
+    left: 39% !important;
+  }
 }
 @media only screen and (max-width: 420px) and (min-width: 391px) {
   #boxImage {
@@ -1156,6 +1120,12 @@ img {
     position: relative;
     left: 0px;
   }
+  .popup {
+    left: 40% !important;
+  }
+  .popup2 {
+    left: 40% !important;
+  }
 }
 @media only screen and (max-width: 480px) and (min-width: 420px) {
   #boxImage {
@@ -1218,6 +1188,12 @@ img {
     position: relative;
     left: 0px;
   }
+  .popup {
+    left: 40% !important;
+  }
+  .popup2 {
+    left: 40% !important;
+  }
 }
 @media only screen and (max-width: 540px) and (min-width: 480px) {
   #boxImage {
@@ -1276,6 +1252,12 @@ img {
   .text25 {
     position: relative;
     left: 0px;
+  }
+  .popup {
+    left: 40% !important;
+  }
+  .popup2 {
+    left: 40% !important;
   }
 }
 
@@ -1344,6 +1326,12 @@ img {
   #thirdSlide {
     width: 315px !important;
   }
+  .popup {
+    left: 40% !important;
+  }
+  .popup2 {
+    left: 40% !important;
+  }
 }
 
 @media only screen and (max-width: 700px) and (min-width: 620px) {
@@ -1410,6 +1398,12 @@ img {
   #thirdSlide {
     width: 315px !important;
   }
+  .popup {
+    left: 40% !important;
+  }
+  .popup2 {
+    left: 40% !important;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 700px) {
@@ -1475,6 +1469,12 @@ img {
   }
   #thirdSlide {
     width: 315px !important;
+  }
+  .popup {
+    left: 40% !important;
+  }
+  .popup2 {
+    left: 40% !important;
   }
 }
 @media only screen and (max-width: 800px) and (min-width: 767px) {

@@ -11,7 +11,7 @@ var swiper1 = new Swiper(".swiper1", {
     delay: 1500,
     reverseDirection: true,
     disableOnInteraction: false,
-    stopOnLast: true,
+    stopOnLast: false,
   },
   coverflowEffect: {
     rotate: 5,
@@ -52,15 +52,15 @@ var swiper2 = new Swiper(".swiper2", {
   grabCursor: "true",
   spaceBetween: 30,
   centeredSlide: "true",
-  //loop: "true",
+  loop: "true",
   slidesPerView: 1,
-  //   autoplay: {
-  //     delay: 2000,
-  //     reverseDirection: true,
-  //   },
-
-  //   mousewheel: true,
-  keyboard: true,
+  speed: 1000,
+  autoplay: {
+    delay: 2000,
+    reverseDirection: false,
+    disableOnInteraction: false,
+    stopOnLast: true,
+  },
   breakpoints: {
     1060: {
       slidesPerView: 3,
@@ -141,7 +141,10 @@ let btnOpen1 = document.querySelector(".btnOpen1");
 let btnClose1 = document.querySelector(".btnClose1");
 let close1 = document.querySelector(".close1");
 let btnSubmit1 = document.querySelector(".btnSubmit1");
-
+let btn = document.querySelector(".btn");
+var Name = document.getElementById("name");
+let email = document.getElementById("email");
+let Submit = document.querySelector(".submit");
 btnOpen.addEventListener("click", () => {
   btnOpen.style.display = "none";
   popup.style.display = "block";
@@ -156,11 +159,18 @@ close.addEventListener("click", () => {
   popup.style.display = "none";
   popup1.style.display = "none";
 });
-btnSubmit.addEventListener("click", () => {
-  btnOpen.style.display = "none";
-  popup.style.display = "none";
-  popup1.style.display = "block";
-});
+// btnSubmit.addEventListener("click", () => {
+//   alert("123");
+
+//   if ($("#email").value == "") {
+//     return false;
+//   } else {
+//     btnOpen.style.display = "none";
+//     popup.style.display = "none";
+//     popup1.style.display = "block";
+//     return true;
+//   }
+// });
 
 btnOpen1.addEventListener("click", () => {
   btnOpen1.style.display = "none";
@@ -176,8 +186,58 @@ close1.addEventListener("click", () => {
   popup2.style.display = "none";
   popup3.style.display = "none";
 });
-btnSubmit1.addEventListener("click", () => {
-  btnOpen1.style.display = "none";
-  popup2.style.display = "none";
-  popup3.style.display = "block";
-});
+function applyUser(event) {
+  event.preventDefault(); // Prevent the form from submitting
+
+  const name = document.getElementById("name1").value;
+  const email = document.getElementById("email1").value;
+
+  // Check if the username and password fields are empty
+  if (name.trim() === "" || email.trim() === "") {
+    Swal.fire({
+      icon: "warning",
+      title: "Warning",
+      text: "Please enter both name and email.",
+    });
+    return; // Exit the function early, no further processing
+  } else {
+    Swal.fire({
+      icon: "success",
+      title: "Success",
+      text: " successfully Registered!",
+      timer: 2000, // Automatically close after 2 seconds
+      showConfirmButton: false, // Hide the "OK" button
+    }).then(() => {
+      // Redirect the user to the dashboard or another page
+      window.location.href = "index.html";
+    });
+  }
+}
+
+function registerUser(event) {
+  event.preventDefault(); // Prevent the form from submitting
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+
+  // Check if the username and password fields are empty
+  if (name.trim() === "" || email.trim() === "") {
+    Swal.fire({
+      icon: "warning",
+      title: "Warning",
+      text: "Please enter both name and email.",
+    });
+    return; // Exit the function early, no further processing
+  } else {
+    Swal.fire({
+      icon: "success",
+      title: "Success",
+      text: " successfully Registered!",
+      timer: 2000, // Automatically close after 2 seconds
+      showConfirmButton: false, // Hide the "OK" button
+    }).then(() => {
+      // Redirect the user to the dashboard or another page
+      window.location.href = "index.html";
+    });
+  }
+}
