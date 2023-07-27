@@ -28,6 +28,7 @@ img {
   height: auto;
   position: relative;
   right: 67px;
+  margin-left: 5px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -201,6 +202,17 @@ img {
   margin-left: 48px;
   font-size: 15px;
 }
+.text2:hover {
+  color: #ff0b0b;
+  cursor: pointer;
+}
+/* .red-tooltip + .tooltip.top > .tooltip-arrow {
+  background-color: #fff;
+} */
+.red-tooltip + .tooltip > .tooltip-inner {
+  background-color: #f00;
+}
+/* .red-tooltip + .tooltip > .tooltip-arrow {border-bottom-color: #f00;  */
 .text3 {
   color: rgba(0, 0, 0, 1);
   font-family: Arial;
@@ -209,6 +221,11 @@ img {
   margin-left: 20px;
   font-size: 15px;
 }
+.text3:hover {
+  color: #ff0b0b;
+  cursor: pointer;
+}
+
 .text4 {
   color: rgba(0, 0, 0, 1);
   font-family: Arial;
@@ -217,6 +234,11 @@ img {
   margin-left: 3px;
   font-size: 15px;
 }
+.text4:hover {
+  color: #ff0b0b;
+  cursor: pointer;
+}
+
 .text5 {
   color: rgba(0, 0, 0, 1);
   font-family: Arial;
@@ -226,6 +248,11 @@ img {
   margin-left: 1px;
   font-size: 15px;
 }
+.text5:hover {
+  color: #ff0b0b;
+  cursor: pointer;
+}
+
 .text6 {
   color: rgba(0, 0, 0, 1);
   font-family: Arial;
@@ -233,6 +260,10 @@ img {
   margin-top: 10px;
   margin-left: 1px;
   font-size: 15px;
+}
+.text6:hover {
+  color: #ff0b0b;
+  cursor: pointer;
 }
 
 .textHeading3 {
@@ -446,7 +477,7 @@ img {
   overflow: hidden;
 }
 
-#imgCEO {
+/* #imgCEO {
   display: block;
   width: 205px;
   height: auto;
@@ -457,7 +488,7 @@ img {
   background-size: cover;
   opacity: 1;
   overflow: hidden;
-}
+} */
 #boxText4 {
   width: 90%;
   height: 245px;
@@ -815,7 +846,7 @@ img {
     left: 0px;
   }
   #boxText3 {
-    height: 1065px;
+    height: 805px;
   }
   #imgCEO {
     margin-left: 40px;
@@ -825,7 +856,7 @@ img {
     height: 390px;
   }
   #boxText5 {
-    height: 995px;
+    height: 1040px;
   }
   #boxText6 {
     height: 74px;
@@ -893,7 +924,7 @@ img {
     left: 1px;
   }
   #boxText3 {
-    height: 1010px;
+    height: 805px;
   }
   #imgCEO {
     margin-left: 40px;
@@ -903,7 +934,7 @@ img {
     height: 390px;
   }
   #boxText5 {
-    height: 995px;
+    height: 1040px;
   }
   .text25 {
     position: relative;
@@ -962,7 +993,7 @@ img {
     left: 1px;
   }
   #boxText3 {
-    height: 885px;
+    height: 805px;
   }
   #imgCEO {
     margin-left: 40px;
@@ -972,7 +1003,7 @@ img {
     height: 390px;
   }
   #boxText5 {
-    height: 995px;
+    height: 1040px;
   }
   .text25 {
     position: relative;
@@ -1021,7 +1052,7 @@ img {
     margin-left: 30px;
   }
   #boxText2 {
-    height: 335px;
+    height: 300px;
   }
   .swiper3 {
     height: 1282px;
@@ -1030,7 +1061,7 @@ img {
     left: 5px;
   }
   #boxText3 {
-    height: 830px;
+    height: 600px;
   }
   #imgCEO {
     margin-left: 140px;
@@ -1040,7 +1071,7 @@ img {
     height: 390px;
   }
   #boxText5 {
-    height: 900px;
+    height: 1040px;
   }
   #boxText6 {
     height: 80px;
@@ -1092,7 +1123,7 @@ img {
     margin-left: 30px;
   }
   #boxText2 {
-    height: 335px;
+    height: 300px;
   }
   .swiper3 {
     height: 1150px;
@@ -1101,7 +1132,7 @@ img {
     left: 2px;
   }
   #boxText3 {
-    height: 830px;
+    height: 557px;
   }
   #imgCEO {
     margin-left: 140px;
@@ -1111,7 +1142,7 @@ img {
     height: 390px;
   }
   #boxText5 {
-    height: 900px;
+    height: 1040px;
   }
   #boxText6 {
     height: 80px;
@@ -1163,7 +1194,7 @@ img {
     margin-left: 60px;
   }
   #boxText2 {
-    height: 335px;
+    height: 300px;
   }
   .swiper3 {
     height: 1120px;
@@ -1172,7 +1203,7 @@ img {
     left: 2px;
   }
   #boxText3 {
-    height: 770px;
+    height: 557px;
   }
   #imgCEO {
     margin-left: 100px;
@@ -1182,7 +1213,7 @@ img {
     height: 390px;
   }
   #boxText5 {
-    height: 995px;
+    height: 1040px;
   }
   .text25 {
     position: relative;
@@ -1231,13 +1262,13 @@ img {
     margin-left: 95px;
   }
   #boxText2 {
-    height: 335px;
+    height: 295px;
   }
   .swiper3 {
     height: 1065px;
   }
   #boxText3 {
-    height: 710px;
+    height: 440px;
   }
   #imgCEO {
     margin-left: 140px;
@@ -1247,7 +1278,7 @@ img {
     height: 390px;
   }
   #boxText5 {
-    height: 940px;
+    height: 1025px;
   }
   .text25 {
     position: relative;
@@ -1300,13 +1331,13 @@ img {
     margin-left: 130px;
   }
   #boxText2 {
-    height: 335px;
+    height: 290px;
   }
   .swiper3 {
     height: 1065px;
   }
   #boxText3 {
-    height: 695px;
+    height: 440px;
   }
   #imgCEO {
     margin-left: 140px;
@@ -1316,7 +1347,7 @@ img {
     height: 390px;
   }
   #boxText5 {
-    height: 940px;
+    height: 1025px;
   }
   .text25 {
     position: relative;
@@ -1373,13 +1404,13 @@ img {
     margin-left: 130px;
   }
   #boxText2 {
-    height: 335px;
+    height: 290px;
   }
   .swiper3 {
     height: 1065px;
   }
   #boxText3 {
-    height: 620px;
+    height: 440px;
   }
   #imgCEO {
     margin-left: 140px;
@@ -1389,7 +1420,7 @@ img {
     height: 390px;
   }
   #boxText5 {
-    height: 940px;
+    height: 1025px;
   }
   .text25 {
     position: relative;
@@ -1445,13 +1476,13 @@ img {
     margin-left: 225px;
   }
   #boxText2 {
-    height: 315px;
+    height: 286px;
   }
   .swiper3 {
     height: 975px;
   }
   #boxText3 {
-    height: 620px;
+    height: 330px;
   }
   #imgCEO {
     margin-left: 140px;
@@ -1461,7 +1492,7 @@ img {
     height: 350px;
   }
   #boxText5 {
-    height: 940px;
+    height: 945px;
   }
   .text25 {
     position: relative;
@@ -1513,11 +1544,11 @@ img {
     margin-left: 65px;
   }
   #boxText2 {
-    height: 315px;
+    height: 286px;
   }
 
   #boxText3 {
-    height: 375px;
+    height: 335px;
   }
   .swiper3 {
     height: 875px;
@@ -1536,7 +1567,7 @@ img {
     height: 310px;
   }
   #boxText5 {
-    height: 810px;
+    height: 955px;
   }
   .col-lg-5 {
     margin-top: 35px;
@@ -1578,11 +1609,11 @@ img {
     margin-left: 65px;
   }
   #boxText2 {
-    height: 315px;
+    height: 286px;
   }
 
   #boxText3 {
-    height: 375px;
+    height: 326px;
   }
   .swiper3 {
     height: 875px;
@@ -1600,7 +1631,7 @@ img {
     height: 310px;
   }
   #boxText5 {
-    height: 810px;
+    height: 915px;
   }
   .col-lg-5 {
     margin-top: 35px;
@@ -1643,11 +1674,11 @@ img {
     margin-left: 65px;
   }
   #boxText2 {
-    height: 315px;
+    height: 300px;
   }
 
   #boxText3 {
-    height: 375px;
+    height: 317px;
   }
   .swiper3 {
     height: 875px;
@@ -1665,7 +1696,7 @@ img {
     height: 310px;
   }
   #boxText5 {
-    height: 810px;
+    height: 900px;
   }
   .col-lg-5 {
     margin-top: 35px;
@@ -1709,11 +1740,11 @@ img {
     margin-left: 65px;
   }
   #boxText2 {
-    height: 315px;
+    height: 280px;
   }
 
   #boxText3 {
-    height: 375px;
+    height: 300px;
   }
   .swiper3 {
     height: 875px;
@@ -1731,73 +1762,7 @@ img {
     height: 310px;
   }
   #boxText5 {
-    height: 810px;
-  }
-  .col-lg-5 {
-    margin-top: 35px;
-  }
-}
-
-@media only screen and (max-width: 990px) and (min-width: 920px) {
-  #firstSlide {
-    width: 380px !important;
-    margin-left: -50px;
-  }
-  .img1 {
-    margin-left: 26px;
-  }
-  .text2 {
-    margin-left: 5px !important;
-  }
-  .img2 {
-    margin-left: -45px;
-  }
-  .text3 {
-    margin-left: -10px;
-  }
-  .img3 {
-    margin-left: -22px;
-  }
-  .text4 {
-    margin-left: 15px;
-  }
-  .img4 {
-    margin-left: 5px;
-  }
-  .text5 {
-    margin-left: 36px;
-  }
-  .img5 {
-    margin-left: 35px;
-  }
-  .text6 {
-    margin-top: 3px;
-    margin-left: 65px;
-  }
-  #boxText2 {
-    height: 315px;
-  }
-
-  #boxText3 {
-    height: 375px;
-  }
-  .swiper3 {
-    height: 875px;
-  }
-  #imgCEO {
-    width: 167px;
-    margin-left: 41px;
-    margin-top: 75px;
-  }
-  #thirdSlide {
-    width: 350px !important;
-  }
-
-  #boxText4 {
-    height: 310px;
-  }
-  #boxText5 {
-    height: 810px;
+    height: 890px;
   }
   .col-lg-5 {
     margin-top: 35px;
@@ -1840,11 +1805,11 @@ img {
     margin-left: 49px;
   }
   #boxText2 {
-    height: 315px;
+    height: 260px;
   }
 
   #boxText3 {
-    height: 355px;
+    height: 275px;
   }
   .swiper3 {
     height: 875px;
@@ -1865,7 +1830,7 @@ img {
     height: 310px;
   }
   #boxText5 {
-    height: 510px;
+    height: 535px;
   }
   .col-lg-5 {
     margin-top: 35px;

@@ -80,11 +80,11 @@ var swiper2 = new Swiper(".swiper2", {
     },
     450: {
       slidesPerView: 1,
-      spaceBetween: 10,
+      spaceBetween: 8,
     },
     320: {
       slidesPerView: 1,
-      spaceBetween: 5,
+      spaceBetween: 8,
     },
   },
   pagination: {
@@ -204,7 +204,7 @@ function applyUser(event) {
     Swal.fire({
       icon: "success",
       title: "Success",
-      text: " successfully Registered!",
+      text: " Successfully Applied!",
       timer: 2000, // Automatically close after 2 seconds
       showConfirmButton: false, // Hide the "OK" button
     }).then(() => {
@@ -232,7 +232,7 @@ function registerUser(event) {
     Swal.fire({
       icon: "success",
       title: "Success",
-      text: " successfully Registered!",
+      text: " Successfully Registered!",
       timer: 2000, // Automatically close after 2 seconds
       showConfirmButton: false, // Hide the "OK" button
     }).then(() => {
@@ -241,3 +241,57 @@ function registerUser(event) {
     });
   }
 }
+const tooltipTrigger = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipContent = [...tooltipTrigger].map(
+  (tooltipEl) => new bootstrap.Tooltip(tooltipEl)
+);
+
+// const navLinkEls = document.querySelectorAll(".nav-link");
+// const sectionEls = document.querySelectorAll(".secton");
+
+// let currentSection = "About";
+// window.addEventListener("scroll", () => {
+//   sectionEls.forEach((sectionEl) => {
+//     if (window.scrollY >= sectionEl.offsetTop) {
+//       currentSection = sectionEl.id;
+//     }
+//   });
+//   navLinkEls.forEach((navLinkEl) => {
+//     if (navLinkEl.href.includes(currentSection)) {
+//       navLinkEl.classList.add("active");
+//     }
+//   });
+// });
+
+var modalWrap = null;
+const showModal = () => {
+  if (modalWrap !== null) {
+    modalWrap.remove();
+  }
+
+  modalWrap = document.createElement("div");
+  modalWrap.innerHTML = `
+      <div class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-light">
+              <h5 class="modal-title"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p></p>
+            </div>
+            <div class="modal-footer bg-light">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">${noBtnLabel}</button>
+              <button type="button" class="btn btn-primary modal-success-btn" data-bs-dismiss="modal">${yesBtnLabel}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+  document.body.append(modalWrap);
+
+  var modal = new bootstrap.Modal(modalWrap.querySelector(".modal"));
+  modal.show();
+};
